@@ -1,0 +1,2 @@
+module Fr::FinanciersHelper
+end

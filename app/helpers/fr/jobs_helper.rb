@@ -1,0 +1,2 @@
+module Fr::JobsHelper
+end

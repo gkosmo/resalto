@@ -1,0 +1,2 @@
+module Fr::AlbumsHelper
+end

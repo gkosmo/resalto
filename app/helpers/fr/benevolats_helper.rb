@@ -1,0 +1,2 @@
+module Fr::BenevolatsHelper
+end

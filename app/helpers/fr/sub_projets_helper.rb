@@ -1,0 +1,2 @@
+module Fr::SubProjetsHelper
+end

@@ -1,0 +1,136 @@
+
+
+<nav class="navbar navbar-default">
+
+    <div class="container-fluid">
+  <div class="navbar-inner" style="background-color: rgba(248, 248, 248,0.9) !important">
+      <div class="row"   >
+        <div class="col-sm-2">
+          <%= link_to root_path do %>
+          <%= image_tag 'logo.png',  class:'img-fluid', height: '100px' %>
+          <% end %>
+        </div>
+
+        <div class="col-sm-2 nav dropdown">
+         <button class="navbar-btn dropdown-toggle" type="button" data-toggle="dropdown">
+           <h5 class="text-center"> Documents </h5></button>
+           <ul class="nav list-inline text-center dropdown-menu">
+            <li class="nav-pill">
+              <%= link_to fr_publications_path do %>
+              Publications
+              <% end %>
+            </li>
+            <li class="nav-pill">
+             <%= link_to fr_outils_path do %>
+             Outils
+             <% end %>
+           </li>
+           <li class="nav-pill">
+            <%= link_to fr_formulaires_path do %>
+            Formulaires
+            <% end %>
+          </li>
+          <li class="nav-pill">
+            <%= link_to fr_liens_path do %>
+            Liens
+            <% end %>
+          </li>
+        </ul>
+      </div>
+
+      <div class=" col-sm-2 nav   dropdown ">
+        <button class="navbar-btn  dropdown-toggle" type="button" data-toggle="dropdown">
+          <h5 class="text-center"> Partenaires </h5></button>
+          <ul class="nav list-inline text-center dropdown-menu">
+            <li class="nav-pill">
+              <%= link_to fr_operationnels_path do %>
+              Operationnels
+              <% end %>
+            </li>
+            <li class="nav-pill">
+             <%= link_to fr_financiers_path do %>
+             Financiers
+             <% end %>
+           </li>
+         </ul>
+       </div>
+       <div class=" nav col-sm-2 dropdown">
+        <button class="navbar-btn  dropdown-toggle" type="button" data-toggle="dropdown">
+
+         <h5 class="text-center" syle= "color: #0070A5  !important;
+         background-color: rgba(255,255,255, 0.7);"> Resalto asbl </h5></button>
+
+         <ul class="nav dropdown-menu">
+
+          <li class="nav-pill">
+            <%= link_to fr_visions_path do %>
+            Visions&Objectifs
+            <% end %>
+          </li>
+          <li class="nav-pill">
+           <%= link_to fr_valeurs_path do %>
+           Valeurs
+           <% end %>
+         </li>
+         <li class="nav-pill">
+          <%= link_to fr_historiques_path do %>
+          Historique
+          <% end %>
+        </li>
+        <li class="nav-pill">
+          <%= link_to fr_equipes_path do %>
+          Equipe
+          <% end %>
+        </li>
+      </ul>
+    </div>
+
+    <div class=" nav col-sm-2 dropdown">
+     <button class="navbar-btn  dropdown-toggle" type="button" data-toggle="dropdown">
+       <h5 class="text-center"> Nous soutenir </h5> </button>
+       <ul class="nav  dropdown-menu">
+        <li class="nav-pill">
+          <%= link_to fr_dons_path do %>
+          Dons & legs
+          <% end %>
+        </li>
+        <li class="nav-pill">
+         <%= link_to fr_benevolats_path do %>
+         Bénévolat
+         <% end %>
+       </li>
+
+       <li class="nav-pill">
+         <%= link_to fr_jobs_path do %>
+         Jobs
+         <% end %>
+       </li>
+     </ul>
+   </div>
+
+   <div class=" nav col-sm-2 dropdown">
+    <button class="navbar-btn  dropdown-toggle" type="button" data-toggle="dropdown">
+     <h5 class="text-center"> Media </h5></button>
+     <ul class="nav dropdown-menu">
+      <li class="nav-pill">
+        <%= link_to fr_albums_path do %>
+        Photos
+        <% end %>
+      </li>
+      <li class="nav-pill">
+       <%= link_to fr_videos_path do %>
+       Videos
+       <% end %>
+     </li>
+
+     <li class="nav-pill">
+       <%= link_to fr_presses_path do %>
+       Presses
+       <% end %>
+     </li>
+   </ul>
+ </div>
+</div>
+</div>
+</div>
+</nav>

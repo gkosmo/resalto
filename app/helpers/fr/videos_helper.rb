@@ -1,0 +1,2 @@
+module Fr::VideosHelper
+end

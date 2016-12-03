@@ -1,0 +1,2 @@
+module Fr::FormulairesHelper
+end

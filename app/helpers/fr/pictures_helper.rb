@@ -1,0 +1,2 @@
+module Fr::PicturesHelper
+end
