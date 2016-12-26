@@ -1,2 +1,7 @@
-<h1>Fr::Albums#index</h1>
-<p>Find me in app/views/fr/albums/index.html.erb</p>
+
+<% @albums.each do |album| %>
+<%= album.titre %>
+<% album.photos.each do |photo| %>
+  <%= cl_image_tag photo.path %>
+<% end %>
+<% end %>
