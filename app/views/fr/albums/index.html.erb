@@ -1,7 +1,19 @@
 
 <% @albums.each do |album| %>
 <%= album.titre %>
+<% unless album.photos.nil? %>
 <% album.photos.each do |photo| %>
   <%= cl_image_tag photo.path %>
+<% end %>
+<% end %>
+<% end %>
+
+
+<% if !current_user.nil? && current_user.admin == true %>
+<%= form_for fr_albums_path(@album) do |f| %>
+  <%= f.text_field :titre %>
+  <%= f.input :description %>
+  <%= f.input :photos, as: :attachinary %>
+  <%= f.submit %>
 <% end %>
 <% end %>

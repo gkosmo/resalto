@@ -11,6 +11,7 @@ gem 'devise', github: 'plataformatec/devise'
 gem 'redis'
 gem "attachinary", github: "assembler/attachinary"
 gem "jquery-fileupload-rails"
+gem "coffee-rails"
 gem 'sass-rails'
 gem 'jquery-rails'
 gem 'uglifier'
