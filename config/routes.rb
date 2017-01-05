@@ -7,6 +7,8 @@ mount Attachinary::Engine => "/attachinary"
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
   #
   #
+get 'nl', to: 'application#change_to_nl'
+post 'nl', to: 'application#change_to_nl'
   namespace :fr do
 resources :visions
 resources :valeurs

@@ -1,0 +1,17 @@
+  <%= render 'shared/navbar_fr' %>
+
+<div class="row">
+<% @pubs.each do |pub| %>
+<div class="col-md-3 col-lg-6">
+  <div class="well wellsize text-center">
+     <h2 class="lead"> <%= pub.prenom %> </h2>
+     <h3> <%= pub.nom %> </h3>
+
+     <%= cl_image_tag pub.photo, class: 'avatar-large' %>
+
+     <h3> <%= pub.description %> </h3>
+
+  </div>
+ </div>
+<% end %>
+</div>

@@ -11,6 +11,43 @@
           <% end %>
         </div>
 
+       <div class=" nav col-sm-2 dropdown">
+        <button class="navbar-btn  dropdown-toggle" type="button" data-toggle="dropdown">
+
+         <h5 class="text-center" syle= "color: #0070A5  !important;
+         background-color: rgba(255,255,255, 0.7);"> Resalto asbl </h5></button>
+
+         <ul class="nav dropdown-menu">
+
+          <li class="nav-pill">
+            <%= link_to fr_visions_path do %>
+            Visions&Objectifs
+            <% end %>
+          </li>
+          <li class="nav-pill">
+           <%= link_to fr_valeurs_path do %>
+           Valeurs
+           <% end %>
+         </li>
+          <li class="nav-pill">
+           <%= link_to fr_projets_path do %>
+           Projets
+           <% end %>
+         </li>
+
+         <li class="nav-pill">
+          <%= link_to fr_historiques_path do %>
+          Historique
+          <% end %>
+        </li>
+        <li class="nav-pill">
+          <%= link_to fr_equipes_path do %>
+          Equipe
+          <% end %>
+        </li>
+      </ul>
+    </div>
+
         <div class="col-sm-2 nav dropdown">
          <button class="navbar-btn dropdown-toggle" type="button" data-toggle="dropdown">
            <h5 class="text-center"> Documents </h5></button>
@@ -54,36 +91,7 @@
            </li>
          </ul>
        </div>
-       <div class=" nav col-sm-2 dropdown">
-        <button class="navbar-btn  dropdown-toggle" type="button" data-toggle="dropdown">
 
-         <h5 class="text-center" syle= "color: #0070A5  !important;
-         background-color: rgba(255,255,255, 0.7);"> Resalto asbl </h5></button>
-
-         <ul class="nav dropdown-menu">
-
-          <li class="nav-pill">
-            <%= link_to fr_visions_path do %>
-            Visions&Objectifs
-            <% end %>
-          </li>
-          <li class="nav-pill">
-           <%= link_to fr_valeurs_path do %>
-           Valeurs
-           <% end %>
-         </li>
-         <li class="nav-pill">
-          <%= link_to fr_historiques_path do %>
-          Historique
-          <% end %>
-        </li>
-        <li class="nav-pill">
-          <%= link_to fr_equipes_path do %>
-          Equipe
-          <% end %>
-        </li>
-      </ul>
-    </div>
 
     <div class=" nav col-sm-2 dropdown">
      <button class="navbar-btn  dropdown-toggle" type="button" data-toggle="dropdown">
@@ -129,11 +137,10 @@
        <% end %>
      </li>
    </ul>
+   <%= link_to 'nl', nl_path( param_cont: params[:controller], param_act: params[:action]) %>
  </div>
- <div class=" nav col-sm-2 dropdown"
- >
- <%= link_to  'same controller different language..' %>
- </div>
+
+
 </div>
 </div>
 </div>
