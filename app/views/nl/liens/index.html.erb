@@ -1,0 +1,13 @@
+<%= render 'shared/navbar_fr' %>
+
+<div class="row">
+<% @pubs.each do |pub| %>
+<div class="col-md-3">
+  <div class="well text-center">
+     <h2> <%= pub.titre %> </h2>
+     <a href="<%=pub.url%>">link to document</a>
+     <h3> <%= pub.description %> </h3>
+  </div>
+ </div>
+<% end %>
+</div>
