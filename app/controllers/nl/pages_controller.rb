@@ -1,5 +1,5 @@
 class Nl::PagesController < ApplicationController
-layout "mainfr"
+layout "mainnl"
   def home
 
   end

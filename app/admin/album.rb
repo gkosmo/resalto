@@ -1,5 +1,5 @@
 ActiveAdmin.register Album do
-
+  remove_filter :albums
 # See permitted parameters documentation:
 # https://github.com/activeadmin/activeadmin/blob/master/docs/2-resource-customization.md#setting-up-strong-parameters
 #
@@ -20,10 +20,10 @@ ActiveAdmin.register Album do
   form do |f|
     f.inputs :titre
     f.inputs :description
-    f.attachinary_file_field :photos
+
+
     f.actions
   end
   actions :all
- permit_params :titre, :description, :photos
-
+ permit_params :titre, :description
 end

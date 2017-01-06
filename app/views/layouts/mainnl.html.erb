@@ -11,13 +11,12 @@
 
   </head>
   <body>
-   <%= # link_to nl_path( param_cont: params[:controller], param_act: params[:action]), style: "float: right; padding-top: 20px; padding-right: 20px;" do %>
-     <%= # image_tag 'dutch.jpeg', width: 30 %>
-     <% # end %>
+  <%= link_to fr_path( param_cont: params[:controller], param_act: params[:action]), style: "float: right; padding-top: 20px; padding-right: 20px;" do %>
+     <%= image_tag 'french.jpeg', width: 30 %>
+     <% end %>
   <div class="container">
 
-      <%= render 'shared/navbar_fr' %>
-
+    <%= render 'shared/navbar_nl' %>
     <%= render 'shared/flashes' %>
     <%= yield %>
     <%= javascript_include_tag 'application' %>

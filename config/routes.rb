@@ -8,7 +8,11 @@ mount Attachinary::Engine => "/attachinary"
   #
   #
 get 'nl', to: 'application#change_to_nl'
-post 'nl', to: 'application#change_to_nl'
+# post 'nl', to: 'application#change_to_nl'
+get 'fr', to: 'application#change_to_fr'
+# post 'fr', to: 'application#change_to_fr'
+get 'nl/home', to: 'nl/pages#home'
+post 'albums_pictures', to: 'application#connect_album'
   namespace :fr do
 resources :visions
 resources :valeurs
@@ -48,6 +52,7 @@ resources :dons
 resources :videos
 resources :albums
 resources :pictures
+resources :pages
   end
   namespace :en do
 resources :presses

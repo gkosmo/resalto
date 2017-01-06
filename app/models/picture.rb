@@ -1,4 +1,5 @@
 class Picture < ApplicationRecord
-  belongs_to :album
+  has_many :albums, through: :albums_pictures
+  has_many :albums_pictures
   mount_uploader :photo, PhotoUploader
 end

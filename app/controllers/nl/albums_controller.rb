@@ -1,4 +1,6 @@
 class Nl::AlbumsController < ApplicationController
+  layout "mainnl"
+
   def index
     @albums = Album.all
     @album = Album.new()

@@ -10,10 +10,15 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170105170143) do
+ActiveRecord::Schema.define(version: 20170106101957) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
+
+  create_table "Albums_Pictures", id: false, force: :cascade do |t|
+    t.integer "picture_id", null: false
+    t.integer "album_id",   null: false
+  end
 
   create_table "active_admin_comments", force: :cascade do |t|
     t.string   "namespace"
@@ -34,6 +39,13 @@ ActiveRecord::Schema.define(version: 20170105170143) do
     t.text     "description"
     t.datetime "created_at",  null: false
     t.datetime "updated_at",  null: false
+  end
+
+  create_table "albums_pictures", id: false, force: :cascade do |t|
+    t.integer "picture_id"
+    t.integer "album_id"
+    t.index ["album_id", "picture_id"], name: "index_albums_pictures_on_album_id_and_picture_id", using: :btree
+    t.index ["picture_id", "album_id"], name: "index_albums_pictures_on_picture_id_and_album_id", using: :btree
   end
 
   create_table "attachinary_files", force: :cascade do |t|
