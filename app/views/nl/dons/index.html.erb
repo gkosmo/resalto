@@ -1,2 +1,22 @@
-<h1>Fr::Dons#index</h1>
-<p>Find me in app/views/fr/dons/index.html.erb</p>
+
+<div class="row">
+<div class="col-lg-12">
+
+<% @pubs.each do |pub| %>
+<div class="well">
+<div class="row">
+  <div class="panel-heading  text-center">
+     <h2> <%= pub.titre %> </h2>
+     </div>
+     <div class="col-md-4">
+     <%= cl_image_tag pub.photo, class: 'img-responsive' %>
+     </div>
+     <div class="col-md-8">
+     <h3> <%= pub.description %> </h3>
+     <h3> <a><%= pub.file %></a> : <%= pub.content %></h3>
+ </div>
+</div>
+</div>
+<% end %>
+</div>
+ </div>

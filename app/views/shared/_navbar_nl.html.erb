@@ -12,39 +12,48 @@
         </div>
 
        <div class=" nav col-sm-2 dropdown">
+
         <button class="navbar-btn  dropdown-toggle" type="button" data-toggle="dropdown">
 
          <h5 class="text-center" syle= "color: #0070A5  !important;
          background-color: rgba(255,255,255, 0.7);"> Resalto asbl </h5></button>
 
          <ul class="nav dropdown-menu">
-
+          <% if Vision.exists?(lang: 'nl') %>
           <li class="nav-pill">
             <%= link_to nl_visions_path do %>
             Doelen
             <% end %>
           </li>
+          <% end %>
+          <% if Valeur.exists?(lang: 'nl') %>
           <li class="nav-pill">
            <%= link_to nl_valeurs_path do %>
            Waarden
            <% end %>
          </li>
+         <% end %>
+          <% if Projet.exists?(lang: 'nl') %>
           <li class="nav-pill">
            <%= link_to nl_projets_path do %>
            Projecten
            <% end %>
          </li>
-
+          <% end %>
+          <% if Historique.exists?(lang: 'nl') %>
          <li class="nav-pill">
           <%= link_to nl_historiques_path do %>
           Geschiedenis
           <% end %>
         </li>
+        <% end %>
+          <% if Equipe.exists?(lang: 'nl') %>
         <li class="nav-pill">
           <%= link_to nl_equipes_path do %>
           Team
           <% end %>
         </li>
+        <% end %>
       </ul>
     </div>
 
@@ -52,26 +61,39 @@
          <button class="navbar-btn dropdown-toggle" type="button" data-toggle="dropdown">
            <h5 class="text-center"> Documenten </h5></button>
            <ul class="nav list-inline text-center dropdown-menu">
+          <% if Publication.exists?(lang: 'nl') %>
+
             <li class="nav-pill" >
               <%= link_to nl_publications_path do %>
               Publicaties
               <% end %>
             </li>
+              <% end %>
+          <% if Outil.exists?(lang: 'nl') %>
+
             <li class="nav-pill" >
              <%= link_to nl_outils_path do %>
              Gereedschap
              <% end %>
            </li>
+
+              <% end %>
+          <% if Formulaire.exists?(lang: 'nl') %>
            <li class="nav-pill"  >
             <%= link_to nl_formulaires_path do %>
             Vormen
             <% end %>
           </li>
+
+              <% end %>
+          <% if Lien.exists?(lang: 'nl') %>
           <li class="nav-pill"  >
             <%= link_to nl_liens_path do %>
             Verbindingen
             <% end %>
           </li>
+            <% end %>
+
         </ul>
       </div>
 
@@ -79,16 +101,21 @@
         <button class="navbar-btn  dropdown-toggle" type="button" data-toggle="dropdown">
           <h5 class="text-center"> Partners </h5></button>
           <ul class="nav list-inline text-center dropdown-menu">
+          <% if Operationnel.exists?(lang: 'nl') %>
             <li class="nav-pill">
               <%= link_to nl_operationnels_path do %>
-              Operationele
+              Operationnels
               <% end %>
             </li>
+              <% end %>
+          <% if Financier.exists?(lang: 'nl') %>
+
             <li class="nav-pill">
              <%= link_to nl_financiers_path do %>
              Financiële
              <% end %>
            </li>
+           <% end %>
          </ul>
        </div>
 
@@ -97,22 +124,29 @@
      <button class="navbar-btn  dropdown-toggle" type="button" data-toggle="dropdown">
        <h5 class="text-center"> Wij ondersteunen </h5> </button>
        <ul class="nav  dropdown-menu">
+          <% if Don.exists?(lang: 'nl') %>
+
         <li class="nav-pill">
           <%= link_to nl_dons_path do %>
           Gifts & legaten
           <% end %>
         </li>
+        <%end%>
+        <% if Benevolat.exists?(lang: 'nl') %>
+
         <li class="nav-pill">
          <%= link_to nl_benevolats_path do %>
          Vrijwilliger
          <% end %>
        </li>
-
+        <%end%>
+        <% if Job.exists?(lang: 'nl') %>
        <li class="nav-pill">
          <%= link_to nl_jobs_path do %>
          Jobs
          <% end %>
        </li>
+       <% end %>
      </ul>
    </div>
 
@@ -120,22 +154,30 @@
     <button class="navbar-btn  dropdown-toggle" type="button" data-toggle="dropdown">
      <h5 class="text-center"> Media </h5></button>
      <ul class="nav dropdown-menu">
+    <% if Album.exists?(lang: 'nl') %>
+
       <li class="nav-pill">
         <%= link_to nl_albums_path do %>
         Pics
         <% end %>
       </li>
+     <%end%>
+      <% if Video.exists?(lang: 'nl') %>
+
       <li class="nav-pill">
        <%= link_to nl_videos_path do %>
        Videos
        <% end %>
      </li>
+     <% end %>
+      <% if Presse.exists?(lang: 'nl') %>
 
      <li class="nav-pill">
        <%= link_to nl_presses_path do %>
        Afdruk
        <% end %>
      </li>
+     <% end %>
    </ul>
   </div>
 
