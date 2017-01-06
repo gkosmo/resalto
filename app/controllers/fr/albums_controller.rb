@@ -1,7 +1,8 @@
 class Fr::AlbumsController < ApplicationController
+  layout "mainfr"
   def index
     @albums = Album.all
-    @album = Album.new()
+    @album = AlbumsPicture.new()
   end
 
   private

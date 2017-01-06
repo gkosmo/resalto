@@ -1,19 +1,19 @@
 
 <% @albums.each do |album| %>
 <%= album.titre %>
-<% unless album.photos.nil? %>
-<% album.photos.each do |photo| %>
+<% unless album.pictures.nil? %>
+<% album.pictures.each do |photo| %>
   <%= cl_image_tag photo.path %>
 <% end %>
 <% end %>
 <% end %>
 
 
-<% if current_user.admin != true %>
-<%= simple_form_for fr_albums_path(@album) do |f| %>
-  <%= f.text_field :titre %>
-  <%= f.text_field :description %>
-  <%= f.attachinary_file_field :photos %>
+<% if current_user.admin == true %>
+<%= simple_form_for @album do |f| %>
+  <%= f.collection_select :picture_id, Picture.all, :id, :titre %>
+  <%= f.collection_select :album_id, Album.all, :id, :titre %>
+
   <%= f.submit %>
 <% end %>
 <% end %>

@@ -1,3 +1,5 @@
 class Album < ApplicationRecord
-    has_attachments :photos
+    has_many :pictures, through: :albums_pictures
+    has_many :albums_pictures
+    accepts_nested_attributes_for :pictures
 end
