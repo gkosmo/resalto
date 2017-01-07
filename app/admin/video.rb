@@ -14,5 +14,6 @@ ActiveAdmin.register Video do
 #   permitted
 # end
 
+actions :all
 
 end

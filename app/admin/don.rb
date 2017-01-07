@@ -5,6 +5,7 @@ ActiveAdmin.register Don do
 #
 # permit_params :list, :of, :attributes, :on, :model
  permit_params :titre, :description, :photo, :file, :lang
+actions :all
 
 # or
 #

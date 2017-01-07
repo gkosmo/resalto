@@ -16,6 +16,7 @@ ActiveAdmin.register Album do
 #       f.input :description
 #       f.input :photos
 #   end
+actions :all
 
   form do |f|
     f.inputs :titre

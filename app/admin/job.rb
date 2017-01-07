@@ -14,5 +14,6 @@ ActiveAdmin.register Job do
 #   permitted
 # end
 
+actions :all
 
 end

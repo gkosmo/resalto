@@ -13,6 +13,7 @@ ActiveAdmin.register Vision do
 #   permitted << :other if params[:action] == 'create' && current_user.admin?
 #   permitted
 # end
+actions :all
 
 
 end

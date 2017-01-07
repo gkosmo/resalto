@@ -13,5 +13,6 @@ ActiveAdmin.register Projet do
 #   permitted
 # end
 
+actions :all
 
 end

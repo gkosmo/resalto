@@ -12,5 +12,6 @@ ActiveAdmin.register Picture do
 #   permitted
 # end
 
+actions :all
 
 end
