@@ -72,7 +72,7 @@ $navbar-default-bg: rgba(248,248,248,0.5);
 
 body {
 background-image: image-url('rootswings.jpg');
-background-size: 93%;
+background-size: contain;
 }
 .center {
      float: none;
