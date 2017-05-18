@@ -1,1 +1,10 @@
-Rails app generated with [lewagon/rails-templates](https://github.com/lewagon/rails-templates), created by the [Le Wagon coding bootcamp](https://www.lewagon.com) team.
+
+
+ This will be the website of Resalto. 
+   To Do's: 
+          - Pictures library ( implement efficiently cloudinary/carrierwave)
+          - Menu in Fr like Nl
+          - Front in NL like FR  - ask for translation
+     
+     
+ Should have done better:  - Model design
